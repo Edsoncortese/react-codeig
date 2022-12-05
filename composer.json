@@ -1,0 +1,41 @@
+{
+    "name": "baharsah/reactigniter",
+    "type": "project",
+    "description": "CodeIgniter4 starter app with React",
+    "homepage": "https://reactigniter.baharsah.my.id",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baharsah",
+            "email": "me@baharsah.my.id",
+            "homepage": "https://github.com/baharsah",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "codeigniter4/framework": "^4.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.1"
+    },
+    "suggest": {
+        "ext-fileinfo": "Improves mime type detection for files"
+    },
+    "autoload": {
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Support\\": "tests/_support"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "build" : "yarn run build"
+    }
+}
